@@ -1,0 +1,30 @@
+Todo
+- Faster code to handle higher speed
+- Fix random deaths
+- Better AI - Pathfinding,
+- Stop program on death(error)
+- Different modes
+- improve getSize, dont find snake/apple
+
+Colours
+Apple: (222, 66, 38)
+Tiles: (171, 218,  85)(light) or (163, 212,  77)(dark)
+x: 28-572 (32 px between, start at 44)
+y: 198-678 (32 Px between, start at 214)
+windowedy: 207-687
+
+Speed
+straight 13(12,8) = 1.755, 1 square on 0,135
+straight 13+141, 7 turn = 7.290
+avg reptime: 0,03532870054244995
+[]
+
+
+Order(maybe)
+1.Find starting position.
+2. Calculate best move.
+3. Press key for best move
+4. Start calculating next best move while snake moves and store in facing
+5. Wait until snake has moved by looping get_head
+6. Do calculated best move when get_head == True
+7. back to 4.
